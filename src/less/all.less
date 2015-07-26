@@ -1,0 +1,68 @@
+//Sizes
+
+// Indents
+@default-indent: 15px;
+
+// Colors
+@main-bg: #000;
+@great-color: #ff9856;
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body{
+    background: @main-bg;
+    width: 100%;
+}
+
+.wrapper{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+
+.great{
+    font-size:30px;
+    font-weight:bold;
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    color:@great-color;
+    letter-spacing:0;
+    transition:1s;
+    position: relative;
+    padding:10px;
+}
+
+.great:before,
+.great:after{
+    content:"";
+    position: absolute;
+    height: 7px;
+    width: 0;
+    background:@great-color;
+    transition:300ms;
+    opacity:0.3;
+}
+
+.great:before{
+    bottom:0;
+    left:0;
+}
+
+.great:after{
+    top:0;
+    left:0;
+}
+
+.great:hover{
+    letter-spacing:5px;
+}
+
+.great:hover:before,
+.great:hover:after{
+    width: 100%;
+    opacity:1;
+}

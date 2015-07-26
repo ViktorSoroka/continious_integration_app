@@ -1,0 +1,19 @@
+{
+  "name": "continious_integration_app",
+  "version": "0.0.0",
+  "authors": [
+    "Viktor Soroka <Viktor_Soroka@epam.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "1"
+  }
+}

@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Cdp task acording to Continious Integration lectures",
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "beforeCommit": "npm run test"
   },
   "author": "Viktor Soroka",
   "license": "ISC",
